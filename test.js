@@ -26,15 +26,3 @@ function isDOMParserSupported() {
     }
 }
 
-// Contoh Penggunaan:
-const isSupported = isDOMParserSupported();
-console.log(`DOMParser didukung di lingkungan ini: ${isSupported}`);
-
-// Anda bisa menggunakan hasil pengecekan ini untuk logika fallback:
-if (isSupported) {
-    console.log("Menggunakan DOMParser bawaan.");
-    // Kode untuk parsing HTML/XML menggunakan new DOMParser()
-} else {
-    console.log("DOMParser tidak tersedia. Gunakan solusi fallback (misalnya, pustaka Cheerio di Node.js, atau regex sederhana).");
-    // Kode untuk solusi parsing alternatif
-}
